@@ -1,0 +1,540 @@
+.profile-page .page-header {
+  min-height: 550px;
+}
+.profile-page .profile-container {
+  color: #ffffff;
+}
+.profile-page .photo-container {
+  width: 123px;
+  height: 123px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+}
+.profile-page .title {
+  text-align: center;
+  margin-top: 30px;
+}
+.profile-page .description,
+.profile-page .category {
+  text-align: center;
+}
+.profile-page h5.description {
+  max-width: 700px;
+  margin: 20px auto 75px;
+}
+.profile-page .nav-align-center {
+  margin-top: 30px;
+}
+.profile-page .content {
+  max-width: 450px;
+  margin: 0 auto;
+}
+.profile-page .content .social-description {
+  display: inline-block;
+  max-width: 150px;
+  width: 145px;
+  text-align: center;
+  margin: 15px 0 0px;
+}
+.profile-page .content .social-description h2 {
+  margin-bottom: 15px;
+}
+.profile-page .button-container {
+  text-align: center;
+  margin-top: -106px;
+}
+.profile-page .collections img {
+  margin-bottom: 30px;
+}
+.profile-page .gallery {
+  margin-top: 45px;
+  padding-bottom: 50px;
+}
+.page-header {
+  height: 100vh;
+  max-height: 1050px;
+  padding: 0;
+  color: #ffffff;
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+}
+.page-header .page-header-image {
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.page-header footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.page-header .container {
+  height: 100%;
+  z-index: 1;
+  text-align: center;
+  position: relative;
+}
+.page-header .container > .content-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0 15px;
+  color: #ffffff;
+  width: 100%;
+  max-width: 880px;
+}
+.page-header .category,
+.page-header .description {
+  color: rgba(255, 255, 255, 0.5);
+}
+.page-header.page-header-small {
+  height: 60vh;
+  max-height: 440px;
+}
+.page-header:after,
+.page-header:before {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  left: 0;
+  top: 0;
+  content: "";
+}
+.page-header:before {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.page-header[filter-color="orange"] {
+  background: rgba(44, 44, 44, 0.2);
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(44, 44, 44, 0.2)),
+    to(rgba(224, 23, 3, 0.6))
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(44, 44, 44, 0.2),
+    rgba(224, 23, 3, 0.6)
+  );
+}
+.page-header .container {
+  z-index: 2;
+}
+img {
+  max-width: 100%;
+}
+.img-raised {
+  -webkit-box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+}
+.landing-page .section-team .team .team-player img {
+  max-width: 100px;
+}
+.cc-profile-image img {
+  position: relative;
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  padding: 0;
+  margin: 0;
+  border: 15px solid transparent;
+  z-index: 9999;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.cc-profile-image a:hover img {
+  -webkit-transform: scale(1.06, 1.06);
+  transform: scale(1.06, 1.06);
+}
+.cc-profile-image a:hover:before {
+  -webkit-animation: none;
+  animation: none;
+}
+.cc-profile-image a:before {
+  content: "";
+  border: 15px solid #0099ff;
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  position: absolute;
+  -webkit-animation: pulsate 1.6s ease-out;
+  animation: pulsate 1.6s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  z-index: 99;
+}
+.cc-profile-image img {
+  position: relative;
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  padding: 0;
+  margin: 0;
+  border: 15px solid transparent;
+  z-index: 9999;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.cc-profile-image a:hover img {
+  -webkit-transform: scale(1.06, 1.06);
+  transform: scale(1.06, 1.06);
+}
+.cc-profile-image a:hover:before {
+  -webkit-animation: none;
+  animation: none;
+}
+@-webkit-keyframes pulsate {
+  0% {
+    -webkit-transform: scale(0.6, 0.6);
+    transform: scale(0.6, 0.6);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+@keyframes pulsate {
+  0% {
+    -webkit-transform: scale(0.6, 0.6);
+    transform: scale(0.6, 0.6);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+.BoxShadow {
+  box-shadow: 15px 15px rgba(0, 153, 255, 0.3);
+}
+
+#AboutMeSection {
+  background: linear-gradient(to bottom right, white, whitesmoke);
+}
+#RatingHeading {
+  text-align: right;
+  font-size: 40px;
+  font-weight: 100;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif !important;
+  color: #0099ff;
+}
+#RatingStars {
+  text-align: right;
+  align-content: right;
+  margin-left: 170px;
+  padding-left: 55px;
+}
+
+.image-gallery-slide .image-gallery-image {
+  width: 100% !important;
+}
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  /* max-height: 50% !important; */
+  min-width: 100% !important;
+}
+
+/* Refrence Style */
+/* References Style */
+#reference {
+  -webkit-box-shadow: -4px 3px 27px -7px rgba(0, 0, 0, 1);
+  -moz-box-shadow: -4px 3px 27px -7px rgba(0, 0, 0, 1);
+  box-shadow: -4px 3px 27px -7px rgba(0, 0, 0, 1);
+}
+.cc-reference .card {
+  padding: 40px !important;
+}
+
+.cc-reference img {
+  height: 120px !important;
+  width: auto !important;
+}
+
+.cc-reference .h5 {
+  margin: 0 !important;
+}
+
+.cc-reference .carousel-indicators li {
+  background: #a5a3a3 !important;
+}
+
+.cc-reference .carousel-indicators .active {
+  background-color: #0099ff !important;
+}
+.carousel .carousel-indicators li {
+  width: 1.625rem !important;
+  height: 0.625rem !important;
+  cursor: pointer !important;
+  border-radius: 5% !important;
+}
+
+.cc-reference .carousel-inner {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 768px) {
+  .cc-reference .cc-reference-header {
+    text-align: center !important;
+  }
+  .cc-reference .carousel-indicators {
+    bottom: 0px !important;
+  }
+  .cc-reference ol {
+    margin-bottom: 0 !important;
+  }
+}
+
+.ReviewParagraph {
+  color: black !important;
+}
+
+.ReviewHeading {
+  font-size: 50px;
+  font-weight: 500;
+  color: #0099ff;
+  font-style: oblique;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  max-height: 400px !important;
+  width: 100% !important;
+}
+/* Desktop  */
+@media (min-width: 1025px) {
+  .padding {
+    padding: 3rem !important;
+  }
+  .BasicInfoCard {
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+    box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+    border: 1px solid rgba(0, 153, 255, 0.3) !important;
+    margin-bottom: 30px;
+    width: 900px !important;
+    /* -webkit-box-shadow: -4px 7px 6px -1px rgba(0, 153, 255, 0.75) !important;
+    -moz-box-shadow: -4px 7px 6px -1px rgba(0, 153, 255, 0.75) !important;
+    box-shadow: -4px 7px 6px -1px rgba(0, 153, 255, 0.75) !important; */
+  }
+  .AboutMeHeading {
+    font-size: 20vh;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    transform: rotate(-20deg);
+    color: #0099ff;
+    -moz-transform: rotate(-20deg);
+    transform: rotateX(-20deg) rotateY(40deg) rotateZ(0deg);
+    margin-bottom: -200px !important;
+  }
+  .AboutMeDescription {
+    margin-top: 0px !important;
+    width: 100%;
+    height: 1000px;
+    /* background-image: url("https://miro.medium.com/max/1400/1*5lpiSFo6j5dhrr6Z6RFd8Q.jpeg"); */
+    background-image: url("../images/green-pine-trees-covered-with-fogs-under-white-sky-during-167699.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-clip-path: polygon(0% 0, 0 0, 0 0%);
+    clip-path: polygon(0 92%, 100% 53%, 100% 0, 0 37%);
+    border: 1px solid black;
+  }
+  .MarginFive {
+    margin-top: 3rem !important;
+  }
+  .containerMargin {
+    margin-top: 280px !important;
+  }
+  .RatingMargin {
+    margin-top: -300px !important;
+  }
+  #RatingHeading {
+    text-align: right;
+    font-size: 40px;
+    font-weight: 100;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif !important;
+    color: #0099ff;
+  }
+  #RatingStars {
+    text-align: right;
+    align-content: right;
+    margin-left: 170px;
+    padding-left: 55px;
+  }
+  #placeToVisitText {
+    text-align: center !important;
+    align-content: center !important;
+    padding-left: 200px;
+  }
+  .placeToVisitTextPosition {
+    margin-left: 3rem !important;
+    padding-left: 3rem !important;
+  }
+}
+/* Tablets */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .AboutMeHeading {
+    color: #0099ff;
+    font-size: 50px;
+    text-decoration: underline;
+    font-family: cursive;
+    margin-left: 25px;
+  }
+  #GuideDescriptionImage {
+    display: none;
+  }
+  #RatingHeading {
+    text-align: left;
+    padding-left: 1.5rem !important;
+    font-size: 40px;
+    font-weight: 50;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif !important;
+    color: #0099ff;
+  }
+
+  #RatingStars div span {
+    text-align: left;
+    align-content: left;
+    font-size: 75px !important;
+    float: left;
+    display: inline;
+  }
+  #RatingStars div {
+    text-align: left;
+    align-content: left;
+    font-size: 50px !important;
+    float: left;
+    display: inline;
+    margin-left: -200px;
+  }
+
+  .RatingMargin {
+    margin-top: -100px !important;
+  }
+  .placeToVisitText {
+    text-align: center !important;
+    align-items: center !important;
+    align-content: center !important;
+  }
+  .placeToVisitTextPosition {
+    margin-left: 12rem !important;
+    padding-left: 1rem !important;
+  }
+  #GuideImageGallery {
+    margin-top: -40px;
+  }
+  #GuidePlaceItems {
+    margin-top: -50px;
+    text-align: center;
+  }
+  #GuidePlacesPagination {
+    margin-left: 1rem !important;
+  }
+
+  #GuideProfileBody {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    max-width: 100% !important;
+  }
+}
+/* Mobile */
+@media (min-width: 0px) and (max-width: 480px) {
+  #BasicImage {
+    display: none;
+  }
+  #BasicInfo {
+    margin-left: 0px !important;
+    align-items: center !important;
+    text-align: left;
+  }
+  .BasicInfoCard {
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+    box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+    border: 1px solid rgba(0, 153, 255, 0.3) !important;
+    margin-bottom: 30px;
+    -webkit-box-shadow: -4px 7px 6px -1px rgba(0, 153, 255, 0.75) !important;
+    -moz-box-shadow: -4px 7px 6px -1px rgba(0, 153, 255, 0.75) !important;
+    box-shadow: -4px 7px 6px -1px rgba(0, 153, 255, 0.75) !important;
+  }
+  .AboutMeHeading {
+    color: #0099ff;
+    font-size: 50px;
+    text-decoration: underline;
+    font-family: cursive;
+    margin-left: 25px;
+  }
+  #GuideDescriptionImage {
+    display: none;
+  }
+  #RatingHeading {
+    text-align: left;
+    padding-left: 1.5rem !important;
+    font-size: 40px;
+    font-weight: 50;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif !important;
+    color: #0099ff;
+  }
+  #RatingStars div span {
+    text-align: left;
+    align-content: left;
+    font-size: 50px !important;
+    float: left;
+    display: inline;
+  }
+  #RatingStars div {
+    text-align: left;
+    align-content: left;
+    font-size: 50px !important;
+    float: left;
+    display: inline;
+    margin-left: -200px;
+  }
+  .RatingMargin {
+    margin-top: -100px !important;
+  }
+  .placeToVisitTextPosition {
+    margin-left: 2rem !important;
+    padding-left: 1rem !important;
+  }
+  #GuideImageGallery {
+    margin-top: -40px;
+  }
+  #GuidePlaceItems {
+    margin-top: -50px;
+    text-align: center;
+  }
+  #GuidePlacesPagination {
+    margin-left: 1rem !important;
+  }
+
+  #GuideProfileBody {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    max-width: 100% !important;
+  }
+}

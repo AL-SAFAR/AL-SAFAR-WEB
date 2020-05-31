@@ -1,0 +1,138 @@
+body {
+  overflow: auto;
+}
+/* Desktop Cut */
+@media (min-width: 1281px) {
+  .header {
+    height: 150vh;
+
+    clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
+  }
+}
+.header {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(76, 216, 255, 0.8),
+      rgba(30, 108, 217, 0.8)
+    ),
+    url("https://cdn.ejoy.io/ea/course/21e_1548215577665.jpg") !important;
+
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+.brand-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.brand {
+  font-size: 20px;
+}
+
+.text-box {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 7.4px;
+}
+
+.herobtn:link,
+.herobtn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.herobtn:hover {
+  /* transform: translateY(-3px); */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.herobtn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.herobtn-white {
+  background-color: #fff;
+  color: #777;
+  font-size: 14px;
+}
+
+/* Desktop HoverButton Hotel */
+@media (min-width: 1281px) {
+  .heading-primary {
+    padding-left: 100px;
+  }
+  .herobtn {
+    margin-left: 200px;
+  }
+}
+/* Mobile Hover.Hoverbutton Hotel */
+@media (min-width: 320px) and (max-width: 480px) {
+  .heading-primary {
+    /* padding-left: 0px;
+    padding: 45px !important; */
+  }
+  .heading-primary-main {
+    font-size: 16px;
+    font-weight: 200;
+  }
+  .heading-primary-sub {
+    font-size: 9px;
+    font-weight: 350;
+  }
+  .herobtn {
+    margin-left: 120px !important;
+    margin-bottom: 20px !important;
+  }
+  .tabs-body {
+    margin: 15px !important;
+  }
+  #OccupancyModal {
+    max-width: 90%;
+  }
+  .modal-dialog {
+    margin-right: 30px !important;
+  }
+}
+/* Tablets HoverButton Hotel */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .heading-primary {
+    padding-left: 0px;
+  }
+  .herobtn {
+    margin-left: 220px !important;
+    margin-bottom: 20px !important;
+  }
+}

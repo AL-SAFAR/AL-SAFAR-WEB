@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.snip1506 {
+  font-family: "Open Sans", Arial, sans-serif;
+  position: relative;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 515px;
+  width: 100%;
+  color: #0099ff;
+  text-align: left;
+  line-height: 1.4em;
+  font-size: 14px;
+  box-shadow: none !important;
+}
+.snip1506 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.snip1506 .profile-image {
+  width: 26%;
+}
+.snip1506 .profile-image img {
+  border-radius: 5px;
+  max-width: 100%;
+  vertical-align: top;
+}
+.snip1506 .profile-image,
+.snip1506 figcaption {
+  float: left;
+}
+.snip1506 figcaption {
+  width: 70%;
+  background-color: #0099ff;
+  color: #fff;
+  padding: 25px;
+  display: inline-block;
+  margin-left: 4%;
+  border-radius: 5px;
+}
+.snip1506 figcaption:after {
+  content: "";
+  position: absolute;
+  right: 70%;
+  top: 30px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #0099ff transparent transparent;
+}
+.snip1506 h3,
+.snip1506 h4,
+.snip1506 p {
+  margin: 0 0 5px;
+}
+.snip1506 h3 {
+  font-weight: 600;
+  font-size: 1.2em;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+.snip1506 h4 {
+  color: whitesmoke;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.snip1506 p {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+.snip1506 .icons {
+  text-align: center;
+  width: 100%;
+}
+.snip1506 i {
+  padding: 10px 2px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: normal;
+  color: #ffffff;
+  opacity: 0.75;
+}
+.snip1506 i:hover {
+  opacity: 1;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1506 a {
+  text-decoration: none;
+}

@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css?family=Ek + Mukta:200");
+.window {
+  overflow: hidden;
+  border-radius: 3px;
+  margin-bottom: 0px !important;
+}
+.window .windowheader {
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  background: #0099ff;
+  overflow: hidden;
+  transition: all 0.5s ease-out, background 1s ease-out;
+  transition-delay: 0.2s;
+  z-index: 1;
+}
+.window .windowheader .burger-container {
+  position: relative;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  transform: rotate(0deg);
+  transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.window .windowheader .burger-container #burger {
+  width: 18px;
+  height: 8px;
+  position: relative;
+  display: block;
+  margin: -4px auto 0;
+  top: 50%;
+}
+.window .windowheader .burger-container #burger .bar {
+  width: 100%;
+  height: 1px;
+  display: block;
+  position: relative;
+  background: #fff;
+  transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  transition-delay: 0s;
+}
+.window .windowheader .burger-container #burger .bar.topBar {
+  transform: translateY(0px) rotate(0deg);
+}
+.window .windowheader .burger-container #burger .bar.btmBar {
+  transform: translateY(6px) rotate(0deg);
+}
+.window .windowheader .icon {
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  line-height: 50px;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.window .windowheader .icon.icon-bag {
+  right: 0;
+  top: 0;
+  left: auto;
+  transform: translateX(0px);
+  transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  transition-delay: 0.65s;
+}
+.window .windowheader ul.menu {
+  position: relative;
+  display: block;
+  padding: 0px 48px 0;
+  list-style: none;
+}
+.window .windowheader ul.menu li.menu-item {
+  border-bottom: 1px solid whitesmoke;
+  margin-top: 5px;
+  transform: scale(1.15) translateY(-30px);
+  opacity: 0;
+  transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99),
+    opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+}
+.window .windowheader ul.menu li.menu-item:nth-child(1) {
+  transition-delay: 0.49s;
+}
+.window .windowheader ul.menu li.menu-item:nth-child(2) {
+  transition-delay: 0.42s;
+}
+.window .windowheader ul.menu li.menu-item:nth-child(3) {
+  transition-delay: 0.35s;
+}
+.window .windowheader ul.menu li.menu-item:nth-child(4) {
+  transition-delay: 0.28s;
+}
+.window .windowheader ul.menu li.menu-item:nth-child(5) {
+  transition-delay: 0.21s;
+}
+.window .windowheader ul.menu li.menu-item:nth-child(6) {
+  transition-delay: 0.14s;
+}
+.window .windowheader ul.menu li.menu-item:nth-child(7) {
+  transition-delay: 0.07s;
+}
+.window .windowheader ul.menu li.menu-item .MobileAnchor {
+  display: block;
+  position: relative;
+  color: #fff;
+  font-family: "Ek Mukta", sans-serif;
+  font-weight: 100;
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 2.35;
+  font-weight: 200;
+  width: 100%;
+}
+.window .windowheader.menu-opened {
+  height: 100%;
+  background-color: #0099ff;
+  transition: all 0.3s ease-in, background 0.5s ease-in;
+  transition-delay: 0.25s;
+}
+.window .windowheader.menu-opened .burger-container {
+  transform: rotate(90deg);
+}
+.window .windowheader.menu-opened .burger-container #burger .bar {
+  transition: all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  transition-delay: 0.2s;
+}
+.window .windowheader.menu-opened .burger-container #burger .bar.topBar {
+  transform: translateY(4px) rotate(45deg);
+}
+.window .windowheader.menu-opened .burger-container #burger .bar.btmBar {
+  transform: translateY(3px) rotate(-45deg);
+}
+.window .windowheader.menu-opened ul.menu li.menu-item {
+  transform: scale(1) translateY(0px);
+  opacity: 1;
+}
+.window .windowheader.menu-opened ul.menu li.menu-item:nth-child(1) {
+  transition-delay: 0.27s;
+}
+.window .windowheader.menu-opened ul.menu li.menu-item:nth-child(2) {
+  transition-delay: 0.34s;
+}
+.window .windowheader.menu-opened ul.menu li.menu-item:nth-child(3) {
+  transition-delay: 0.41s;
+}
+.window .windowheader.menu-opened ul.menu li.menu-item:nth-child(4) {
+  transition-delay: 0.48s;
+}
+.window .windowheader.menu-opened ul.menu li.menu-item:nth-child(5) {
+  transition-delay: 0.55s;
+}
+.window .windowheader.menu-opened ul.menu li.menu-item:nth-child(6) {
+  transition-delay: 0.62s;
+}
+.window .windowheader.menu-opened ul.menu li.menu-item:nth-child(7) {
+  transition-delay: 0.69s;
+}
+.window .windowheader.menu-opened .icon.icon-bag {
+  transform: translateX(75px);
+  transition-delay: 0.3s;
+}
+.window .windowcontent {
+  font-family: "Ek Mukta", sans-serif;
+  width: 100%;
+  overflow: auto;
+}
+@media (max-width: 600px) {
+  .window {
+    width: 100%;
+    margin: 0;
+    border-radius: 0px;
+  }
+  .window .windowheader {
+    position: fixed;
+  }
+}
+.ProfileMobile {
+  color: white;
+}
+#mobile_navbar {
+  margin-bottom: 0px;
+  height: 50px;
+}

@@ -1,0 +1,98 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans";
+
+.title {
+  margin-bottom: 25px;
+  color: #aeb6bf;
+  font-size: 18px;
+}
+.title span {
+  color: #5dade2;
+}
+.content {
+  width: 640px;
+  margin: 45px auto;
+}
+.tabs-body {
+}
+.tabs-header {
+  display: table;
+  width: 100%;
+  list-style-type: none;
+  float: right;
+}
+.tabs-header li {
+  display: table-cell;
+  text-align: center;
+  color: #0099ff;
+  cursor: pointer;
+}
+.tabs-header li > a {
+  display: block;
+  padding: 15px;
+  background: whitesmoke;
+  transition: all 0.2s ease-in;
+  transform: skew(-40deg);
+  color: #0099ff;
+}
+.tabs-header li > a span {
+  display: block;
+  transform: skew(40deg);
+}
+.tabs-header li > a:hover {
+  background: #0099ff;
+  color: white;
+  top: 0;
+}
+.tabs-header li > a:hover span {
+  color: white;
+}
+.tabs-header li.active > a {
+  background: #0099ff;
+  color: whitesmoke;
+}
+
+.tabs-header li:first-of-type > a {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 30px 50px;
+}
+
+.tabs-header li:last-of-type > a {
+  padding-right: 20px;
+  margin-left: 0px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 50px 90px;
+}
+
+.tabs-content {
+  flex: 1;
+  position: relative;
+  padding: 80px 40px;
+  overflow: hidden;
+  background: whitesmoke;
+  border: 1px solid #0099ff;
+  opacity: 0.7;
+}
+.tabs-content .tabs-textItem {
+  display: none;
+  transform: translateY(100%);
+}
+.tabs-content .tabs-textItem.show {
+  display: block;
+  transform: translateY(0);
+  animation: change 0.49s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.tabs-content .tabs-textItem p {
+  font: normal 15px/1.5 "Open Sans";
+  color: whitesmoke;
+}
+
+@keyframes change {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

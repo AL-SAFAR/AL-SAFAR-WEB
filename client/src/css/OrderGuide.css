@@ -1,0 +1,35 @@
+#GuidePaymentImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#OrderGuideCaption {
+  text-align: center;
+}
+#OrderGuideName {
+  font-weight: 500;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  font-style: oblique;
+  text-transform: uppercase;
+}
+#OrderGuideDetails {
+  margin-top: 10px;
+  text-align: left;
+}
+
+#OrderGuideDetails b {
+  font-weight: 700;
+}
+#OrderGuideRating {
+  margin-top: -30px;
+  margin-left: 55px;
+}
+#ratingContainer b {
+  /* position: absolute; */
+}
+#ratingContainer {
+  margin-top: 10px;
+}

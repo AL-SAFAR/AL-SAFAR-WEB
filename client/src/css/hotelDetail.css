@@ -1,0 +1,11 @@
+.HotelHeading {
+  font-family: "Times New Roman", Times, serif;
+  color: #484848;
+  font-style: bold;
+}
+.amenitiesIcon {
+  color: #0099ff;
+}
+.HotelFoodNames {
+  margin-top: -70px;
+}

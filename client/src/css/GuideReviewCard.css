@@ -1,0 +1,178 @@
+figure.snip1204 {
+  font-family: "Raleway", Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  color: #333;
+  text-align: left;
+  box-shadow: none !important;
+}
+figure.snip1204 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+figure.snip1204 img {
+  max-width: 100%;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-right: 5px;
+  display: block;
+  z-index: 1;
+  position: absolute;
+  right: 50%;
+}
+figure.snip1204 blockquote {
+  margin: 0;
+  display: block;
+  border-radius: 8px;
+  position: relative;
+  background-color: whitesmoke;
+  padding: 30px 50px 65px 50px;
+  font-size: 1em;
+  font-weight: 500;
+  margin: 0 0 -40px;
+  line-height: 1.6em;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+figure.snip1204 blockquote:before,
+figure.snip1204 blockquote:after {
+  font-family: "FontAwesome";
+  content: "\201C";
+  position: absolute;
+  font-size: 50px;
+  opacity: 0.3;
+  font-style: normal;
+}
+figure.snip1204 blockquote:before {
+  top: 35px;
+  left: 20px;
+}
+figure.snip1204 blockquote:after {
+  content: "\201D";
+  right: 20px;
+  bottom: 35px;
+}
+figure.snip1204 .author {
+  margin: 0;
+  height: 80px;
+  display: block;
+  text-align: left;
+  color: #ffffff;
+  padding: 0 35px;
+  position: relative;
+}
+figure.snip1204 .author h5,
+figure.snip1204 .author span {
+  left: 50%;
+  position: absolute;
+  opacity: 0.8;
+  padding: 3px 5px;
+}
+figure.snip1204 .author h5 {
+  text-transform: uppercase;
+  bottom: 50%;
+  margin: 0;
+  font-weight: 800;
+  color: #000000;
+}
+figure.snip1204 .author span {
+  font-size: 0.8em;
+  color: #ffffff;
+  top: 50%;
+}
+/* Mobile */
+@media (min-width: 0px) and (max-width: 480px) {
+  .indicatorsRC {
+    font-size: 80px;
+    color: whitesmoke;
+    vertical-align: 10vh;
+    background-color: rgba(0, 153, 255, 0.5);
+    margin-top: 7.5rem !important;
+  }
+  .indicatorsRC:active {
+    font-size: 80px;
+    color: #0099ff;
+    vertical-align: 10vh;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  figure.snip1204 {
+    width: 160%;
+  }
+  .chevronLeft {
+    width: 5% !important;
+    margin-right: 1.1rem !important;
+    margin-left: -0.3rem !important;
+  }
+  .chevronRight {
+    width: 10% !important;
+    margin-left: 23%;
+    margin-right: 0.5rem !important;
+  }
+  #GuidReviewCardBody {
+    width: 50% !important;
+  }
+}
+/* Tablet */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .indicatorsRC {
+    font-size: 150px;
+    color: whitesmoke;
+    vertical-align: 13vh;
+    background-color: rgba(0, 153, 255, 0.5);
+    margin-top: 1.5rem !important;
+  }
+  .indicatorsRC:hover {
+    font-size: 150px;
+    color: #0099ff;
+    vertical-align: 13vh;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  figure.snip1204 {
+    min-width: 220px;
+    max-width: 610px;
+    width: 100%;
+  }
+  #backgroundReviewCard {
+    max-height: 520px;
+  }
+}
+/* Desktop */
+@media (min-width: 1025px) {
+  .indicatorsRC {
+    font-size: 150px;
+    color: whitesmoke;
+    vertical-align: 13vh;
+    background-color: rgba(0, 153, 255, 0.5);
+    margin-top: 1.5rem !important;
+  }
+  .indicatorsRC:hover {
+    font-size: 150px;
+    color: #0099ff;
+    vertical-align: 13vh;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  figure.snip1204 {
+    min-width: 220px;
+    max-width: 610px;
+    width: 100%;
+  }
+  #backgroundReviewCard {
+    max-height: 520px;
+  }
+}
+
+#backgroundReviewCard {
+  background-image: url("https://pngimage.net/wp-content/uploads/2018/06/travel-background-png-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.chevronLeft {
+  text-align: right;
+  vertical-align: bottom;
+}
+.chevronRight {
+  text-align: left;
+  vertical-align: bottom;
+}

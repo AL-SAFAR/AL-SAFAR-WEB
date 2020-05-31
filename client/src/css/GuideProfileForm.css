@@ -1,0 +1,40 @@
+@media (min-width: 1281px) {
+  .GuideProfileForm {
+    padding: 3rem !important;
+  }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  .GuidePlaceImage {
+    padding-top: 0.5rem;
+  }
+  .GuideProfileForm {
+    padding: 3rem !important;
+  }
+  .guideplaceName {
+    padding: 0.5rem !important;
+    margin: 0.5rem !important;
+    border: 1px dotted #0099ff !important;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .GuidePlaceImage {
+    padding-top: 0.5rem;
+  }
+  .GuideProfileForm {
+    padding: 0px !important;
+  }
+  .CreateProfileBtn {
+    padding: 0.84rem 0.14rem !important;
+  }
+  .colguideform {
+    padding-top: 0.5rem !important;
+  }
+  .guideformpanel {
+    padding: 20px !important;
+  }
+  .guideplaceName {
+    padding: 0.5rem !important;
+    margin: 0.5rem !important;
+    border: 1px dotted #0099ff !important;
+  }
+}

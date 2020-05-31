@@ -1,0 +1,207 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  outline: none;
+}
+.hide {
+  display: none;
+}
+.buttonloading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 12.5rem;
+  margin: 0;
+  padding: 1.5rem 3.125rem;
+  background-color: #09f;
+  border: none;
+  border-radius: 0.3125rem;
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2);
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+.buttonloading:before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #54d98c;
+}
+.buttonloading span {
+  position: absolute;
+  line-height: 0;
+}
+.buttonloading span i {
+  transform-origin: center center;
+}
+.buttonloading span:nth-of-type(1) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.buttonloading span:nth-of-type(2) {
+  top: 100%;
+  transform: translateY(0%);
+  font-size: 24px;
+}
+.buttonloading span:nth-of-type(3) {
+  display: none;
+}
+.activeloading {
+  background-color: #2ecc71;
+}
+.activeloading:before {
+  width: 100%;
+  transition: width 3s linear;
+}
+.activeloading span:nth-of-type(1) {
+  top: -100%;
+  transform: translateY(-50%);
+}
+.activeloading span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.activeloading span:nth-of-type(2) i {
+  animation: loading 500ms linear infinite;
+}
+.activeloading span:nth-of-type(3) {
+  display: none;
+}
+.finished {
+  background-color: #33adff;
+}
+.finished .submit {
+  display: none;
+}
+.finished .loading {
+  display: none;
+}
+.finished .check {
+  display: block !important;
+  font-size: 24px;
+  animation: scale 0.5s linear;
+}
+.finished .check i {
+  transform-origin: center center;
+}
+@keyframes loading {
+  100% {
+    transform: rotate(360deg);
+    .buttonloading {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 12.5rem;
+      margin: 0;
+      padding: 1.5rem 3.125rem;
+      background-color: #3fb2ff;
+      border: none;
+      border-radius: 0.3125rem;
+      box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2);
+      color: white;
+      font-weight: 300;
+      text-transform: uppercase;
+      overflow: hidden;
+      :before {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: #54d98c;
+      }
+      span {
+        position: absolute;
+        line-height: 0;
+        i {
+          transform-origin: center center;
+        }
+        :nth-of-type(1) {
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        :nth-of-type(2) {
+          top: 100%;
+          transform: translateY(0%);
+          font-size: 24px;
+        }
+        :nth-of-type(3) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(10);
+  }
+  50% {
+    transform: scale(0.2);
+  }
+  70% {
+    transform: scale(1.2);
+  }
+  90% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+    .buttonloading {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 12.5rem;
+      margin: 0;
+      padding: 1.5rem 3.125rem;
+      background-color: #3fb2ff;
+      border: none;
+      border-radius: 0.3125rem;
+      box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2);
+      color: white;
+      font-weight: 300;
+      text-transform: uppercase;
+      overflow: hidden;
+      :before {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: #54d98c;
+      }
+      span {
+        position: absolute;
+        line-height: 0;
+        i {
+          transform-origin: center center;
+        }
+        :nth-of-type(1) {
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        :nth-of-type(2) {
+          top: 100%;
+          transform: translateY(0%);
+          font-size: 24px;
+        }
+        :nth-of-type(3) {
+          display: none;
+        }
+      }
+    }
+  }
+}

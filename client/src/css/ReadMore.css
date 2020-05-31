@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:600);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+.snip1434 {
+  font-family: "Raleway", Arial, sans-serif;
+  border: none;
+  border-radius: 5px;
+  overflow: hidden;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 0px 15px 0px 40px;
+  text-align: center;
+  display: inline-block;
+
+  font-weight: 600;
+  outline: none;
+  position: relative;
+  font-size: 18px;
+
+  background-color: #0099ff;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.snip1434 i {
+  font-size: 2em;
+  width: 5px;
+  line-height: 10px;
+  position: absolute;
+  left: 7px;
+  top: 5px;
+  -webkit-transform: rotate(-25deg) scale(1);
+  transform: rotate(-25deg) scale(1);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.snip1434:hover,
+.snip1434.hover {
+  color: #ffffff;
+  background-color: #5cb85c;
+}
+.snip1434:hover i,
+.snip1434.hover i {
+  -webkit-transform: rotate(-20deg) scale(1.3);
+  transform: rotate(-20deg) scale(1.3);
+}

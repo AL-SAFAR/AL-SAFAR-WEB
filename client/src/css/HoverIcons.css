@@ -1,0 +1,53 @@
+/*  Update */
+
+tr td .update {
+  text-align: right;
+}
+tr td .update a {
+  color: #0275d8;
+  display: inline-block;
+  position: relative;
+}
+tr td .update a:after {
+  content: "\f021";
+  font-family: FontAwesome;
+  margin-left: -10px;
+  opacity: 0;
+  vertical-align: middle;
+  transition: margin 0.3s, opacity 0.3s;
+}
+tr td .update a:hover:after {
+  margin-left: 5px;
+  opacity: 1;
+}
+
+/* Delete */
+td,
+tr,
+thead,
+table {
+  overflow: scroll !important;
+}
+tr td .delete {
+  text-align: left;
+  color: #d9534f !important;
+}
+tr td .delete a {
+  color: #d9534f !important;
+  display: inline-block;
+  position: relative;
+}
+tr td .delete a:after {
+  color: #d9534f !important;
+  content: "\f1f8";
+  font-family: FontAwesome;
+  margin-left: -10px;
+  opacity: 0;
+  vertical-align: middle;
+  transition: margin 0.3s, opacity 0.3s;
+}
+tr td .delete a:hover:after {
+  color: #d9534f !important;
+  margin-left: 5px;
+  opacity: 1;
+}

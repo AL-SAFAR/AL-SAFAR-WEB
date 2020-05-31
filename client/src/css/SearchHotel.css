@@ -1,0 +1,427 @@
+.pen-title {
+  padding: 50px 0;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.pen-title h1 {
+  margin: 0 0 20px;
+  font-size: 48px;
+  font-weight: 300;
+}
+.pen-title span {
+  font-size: 12px;
+}
+.pen-title span .fa {
+  color: #09f;
+}
+.pen-title span a {
+  color: #09f;
+  font-weight: 600;
+  text-decoration: none;
+}
+.rerun {
+  margin: 0 0 30px;
+  text-align: center;
+}
+.rerun a {
+  cursor: pointer;
+  display: inline-block;
+  background: #09f;
+  border-radius: 3px;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+#codepen,
+#portfolio {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #09f;
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  color: #fff;
+  text-align: center;
+}
+#codepen i,
+#portfolio i {
+  line-height: 56px;
+}
+#portfolio {
+  bottom: 96px;
+  right: 36px;
+  background: #09f;
+  width: 44px;
+  height: 44px;
+}
+#portfolio i {
+  line-height: 44px;
+}
+.container {
+  position: relative;
+  max-width: 460px;
+  width: 100%;
+  margin: 0 auto 100px;
+}
+.container.active .searchhotelcard:first-child {
+  background: #f2f2f2;
+  margin: 0 15px;
+}
+.container.active .searchhotelcard:nth-child(2) {
+  background: #fafafa;
+  margin: 0 10px;
+}
+.container.active .searchhotelcard.alt {
+  top: 20px;
+  right: 0;
+  width: 100%;
+  min-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  padding: 60px 0 40px;
+  overflow: hidden;
+}
+.container.active .searchhotelcard.alt .searchButtonAlt {
+  position: absolute;
+  top: 40px;
+  right: -70px;
+  box-shadow: none;
+  transition: transform 0.3s ease;
+}
+.container.active .searchhotelcard.alt .searchButtonAlt:before {
+  content: "";
+}
+.container.active .searchhotelcard.alt .title,
+.container.active .searchhotelcard.alt .input-container,
+.container.active .searchhotelcard.alt .button-container {
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s ease;
+}
+.container.active .searchhotelcard.alt .title {
+  transition-delay: 0.3s;
+}
+.container.active .searchhotelcard.alt .input-container {
+  transition-delay: 0.4s;
+}
+.container.active .searchhotelcard.alt .input-container:nth-child(2) {
+  transition-delay: 0.5s;
+}
+.container.active .searchhotelcard.alt .input-container:nth-child(3) {
+  transition-delay: 0.6s;
+}
+.container.active .searchhotelcard.alt .button-container {
+  transition-delay: 0.7s;
+}
+.searchhotelcard {
+  position: relative;
+  background: #fff;
+  border-radius: 5px;
+  padding: 60px 0 40px 0;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+}
+.searchhotelcard:first-child {
+  background: #fafafa;
+  height: 10px;
+  border-radius: 5px 5px 0 0;
+  margin: 0 10px;
+  padding: 0;
+}
+.searchhotelcard .title {
+  position: relative;
+  border-left: 5px solid #09f;
+  margin: 0 0 35px;
+  padding: 10px 0 10px 50px;
+  color: #09f;
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.searchhotelcard .input-container {
+  position: relative;
+  margin: 0 60px 50px;
+}
+.searchhotelcard .input-container input {
+  outline: none;
+  position: relative;
+  background: none;
+  width: 100%;
+  height: 60px;
+  border: 0;
+  color: #212121;
+  font-size: 24px;
+  font-weight: 400;
+}
+.searchhotelcard .input-container input:focus ~ label {
+  color: #9d9d9d;
+  transform: translate(-12%, -50%) scale(0.75);
+}
+.searchhotelcard .input-container input:focus ~ .bar:before,
+.searchhotelcard .input-container input:focus ~ .bar:after {
+  width: 50%;
+}
+.searchhotelcard .input-container input:valid ~ label {
+  color: #9d9d9d;
+  transform: translate(-12%, -50%) scale(0.75);
+}
+.searchhotelcard .input-container label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #757575;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 60px;
+}
+.searchhotelcard .input-container .bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #757575;
+  width: 100%;
+  height: 1px;
+}
+.searchhotelcard .input-container .bar:before,
+.searchhotelcard .input-container .bar:after {
+  content: "";
+  position: absolute;
+  background: #09f;
+  width: 0;
+  height: 2px;
+  transition: 0.2s ease;
+}
+.searchhotelcard .input-container .bar:before {
+  left: 50%;
+}
+.searchhotelcard .input-container .bar:after {
+  right: 50%;
+}
+.searchhotelcard .button-container {
+  margin: 0 60px;
+  text-align: center;
+}
+.searchhotelcard .button-container button {
+  outline: 0;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  background: 0;
+  width: 240px;
+  border: 2px solid #09f;
+  padding: 20px 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+.searchhotelcard .button-container button span {
+  position: relative;
+  color: #09f;
+  transition: 0.3s ease;
+}
+.searchhotelcard .button-container button:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  background: #09f;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin: -15px 0 0 -15px;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+.searchhotelcard .button-container button:hover,
+.searchhotelcard .button-container button:active,
+.searchhotelcard .button-container button:focus {
+  border-color: white;
+  background-color: #09f;
+}
+.searchhotelcard .button-container button:hover span,
+.searchhotelcard .button-container button:active span,
+.searchhotelcard .button-container button:focus span {
+  color: white;
+}
+.searchhotelcard .button-container button:active span,
+.searchhotelcard .button-container button:focus span {
+  color: #fff;
+}
+.searchhotelcard .button-container button:active:before,
+.searchhotelcard .button-container button:focus:before {
+  opacity: 1;
+}
+.searchhotelcard .footer {
+  margin: 40px 0 0;
+  color: #d3d3d3;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+.searchhotelcard .footer a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.searchhotelcard .footer a:hover {
+  color: #bababa;
+}
+.searchhotelcard.alt {
+  position: absolute;
+  top: 40px;
+  right: -70px;
+  width: 140px;
+  height: 140px;
+  background: none;
+  border-radius: 100%;
+  box-shadow: none;
+  padding: 0;
+  transition: 0.3s ease;
+}
+.searchhotelcard.alt .searchButtonAlt {
+  position: relative;
+  background: #09f;
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  color: #fff;
+  font-size: 58px;
+  line-height: 140px;
+  text-align: center;
+  cursor: pointer;
+}
+.searchhotelcard.alt .searchButtonAlt:before {
+  content: "\f002";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+.searchhotelcard.alt .title,
+.searchhotelcard.alt .input-container,
+.searchhotelcard.alt .button-container {
+  left: 100px;
+  opacity: 0;
+  visibility: hidden;
+}
+.searchhotelcard.alt .title {
+  position: relative;
+  border-color: #fff;
+  color: #fff;
+}
+.searchhotelcard.alt .title .close {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 60px;
+  display: inline;
+  color: #fff;
+  font-size: 58px;
+  font-weight: 400;
+}
+.searchhotelcard.alt .title .close:before {
+  content: "\00d7";
+}
+.searchhotelcard.alt .input-container input {
+  color: #fff;
+}
+.searchhotelcard.alt .input-container input:focus ~ label {
+  color: #fff;
+}
+.searchhotelcard.alt .input-container input:focus ~ .bar:before,
+.searchhotelcard.alt .input-container input:focus ~ .bar:after {
+  background: #fff;
+}
+.searchhotelcard.alt .input-container input:valid ~ label {
+  color: #fff;
+}
+.searchhotelcard.alt .input-container label {
+  color: rgba(255, 255, 255, 0.8);
+}
+.searchhotelcard.alt .input-container .bar {
+  background: rgba(255, 255, 255, 0.8);
+}
+.searchhotelcard.alt .button-container button {
+  width: 100%;
+  background: #fff;
+  border-color: #fff;
+}
+.searchhotelcard.alt .button-container button span {
+  color: #09f;
+}
+.searchhotelcard.alt .button-container button:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+.searchhotelcard.alt .button-container button:active:before,
+.searchhotelcard.alt .button-container button:focus:before {
+  display: none;
+}
+@media (min-width: 1281px) {
+  .searchButtonAlt {
+    display: "";
+  }
+  #mainHotelCard {
+    margin-top: 50px;
+    padding-top: 50px;
+  }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  .IconButtonSearch {
+    margin-right: 80px;
+    padding-right: 50px;
+    width: 30%;
+  }
+  .SearchHotelContainer {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  .searchhotelcard.alt .searchButtonAlt {
+    position: relative !important;
+    background: #0099ff !important;
+    width: 100px !important;
+    height: 90px !important;
+    border-radius: 50% !important;
+    color: #ffffff !important;
+    font-size: 58px !important;
+    line-height: 90px !important;
+    text-align: center !important;
+    cursor: pointer !important;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .searchButtonAlt {
+    max-width: 100%;
+  }
+  .IconButtonSearch {
+    margin-right: 80px;
+    padding-right: 50px;
+    width: 30%;
+  }
+  .SearchHotelContainer {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  .searchhotelcard.alt .searchButtonAlt {
+    position: relative !important;
+    background: #0099ff !important;
+    width: 100px !important;
+    height: 90px !important;
+    border-radius: 50% !important;
+    color: #ffffff !important;
+    font-size: 58px !important;
+    line-height: 90px !important;
+    text-align: center !important;
+    cursor: pointer !important;
+    margin-top: 10px;
+  }
+}

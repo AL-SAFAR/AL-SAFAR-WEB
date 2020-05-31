@@ -1,0 +1,24 @@
+.modal-backdrop.fade {
+  opacity: 0.5 !important;
+  filter: alpha(opacity=0) !important;
+}
+.modal-backdrop.in {
+  opacity: 0.5 !important;
+  filter: alpha(opacity=50) !important;
+}
+
+.modal-backdrop.fade {
+  opacity: 0.5 !important;
+  filter: alpha(opacity=0) !important;
+}
+.modal-backdrop.fade.in {
+  opacity: 0.5 !important;
+  filter: alpha(opacity=50) !important;
+}
+
+#largeModal {
+  min-width: 800px !important;
+}
+.rdrDateRangePickerWrapper {
+  max-width: 100% !important;
+}

@@ -1,0 +1,13 @@
+.GuideHeader {
+  min-width: 100%;
+  max-height: 500px;
+  position: relative;
+}
+.GuideHeader * {
+  box-sizing: border-box;
+  transition: all 0.45s ease;
+}
+.GuideHeader .HeaderImage {
+  height: 500px;
+  width: 100%;
+}
