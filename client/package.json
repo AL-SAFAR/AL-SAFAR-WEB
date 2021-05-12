@@ -9,7 +9,7 @@
     "@trendmicro/react-sidenav": "^0.4.5",
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
-    "chart.js": "2.8.0",
+    "chart.js": "2.9.4",
     "create-react-class": "^15.6.3",
     "form-data": "^3.0.0",
     "history": "4.9.0",
