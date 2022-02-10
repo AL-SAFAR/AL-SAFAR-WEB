@@ -36,7 +36,7 @@
     "mongoose": "^5.7.10",
     "mongoose-auto-increment": "^5.0.1",
     "morgan": "^1.9.1",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "path": "^0.12.7",
     "react-image-gallery": "^1.0.7",
     "react-spring": "^8.0.27",
